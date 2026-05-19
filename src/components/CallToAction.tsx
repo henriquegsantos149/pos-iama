@@ -51,7 +51,7 @@ export default function CallToAction({ onOpenModal }: CallToActionProps) {
             </button>
             
             <a 
-              href="https://wa.link/yv3m1g" 
+              href="https://wa.link/n23pkm" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Falar com um consultor via WhatsApp"
