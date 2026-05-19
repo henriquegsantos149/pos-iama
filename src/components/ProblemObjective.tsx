@@ -69,10 +69,10 @@ export default function ProblemObjective() {
 
                 <div className="space-y-4 text-base text-[var(--color-brand-light)]/85 font-secondary leading-relaxed">
                   <p>
-                    Por décadas, o profissional ambiental entendeu o problema em campo, mas dependeu de programadores para criar soluções. A IA quebrou essa barreira técnica.
+                    A IA eliminou a barreira técnica. Quem vive o problema em campo agora tem o poder de criar o próprio sistema para resolvê-lo.
                   </p>
                   <p>
-                    Quem conhece o problema de perto agora está na melhor posição para criar o sistema que o resolve. Esta janela de oportunidade única não ficará aberta para sempre.
+                    Esta janela de oportunidade é única e não ficará aberta para sempre.
                   </p>
                 </div>
               </div>
