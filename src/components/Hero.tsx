@@ -44,7 +44,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
             <img 
               src={`${import.meta.env.BASE_URL}mec-badge.png`} 
               alt="Selo do MEC - Reconhecimento pelo Ministério da Educação" 
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </div>
         </motion.div>
