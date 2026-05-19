@@ -47,7 +47,7 @@ export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
             <div className="relative z-10 flex items-center gap-2 md:gap-3">
               <MessageCircle className="w-5 h-5 md:w-6 md:h-6 animate-pulse" />
               <span className="font-primary font-extrabold uppercase tracking-wider text-base md:text-lg">
-                Fazer Pré-Matrícula
+                Entrar no Grupo de Pré-Matrícula
               </span>
             </div>
 
