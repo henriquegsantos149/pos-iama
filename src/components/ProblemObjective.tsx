@@ -23,9 +23,7 @@ export default function ProblemObjective() {
               <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase leading-tight">
                 As três camadas de gargalo do <span className="text-brand-gradient">profissional ambiental</span>
               </h2>
-              <p className="text-[var(--color-brand-light)]/60 font-secondary text-lg">
-                O mercado mudou. O modelo tradicional de consultoria e análise ambiental atingiu seu limite técnico e financeiro.
-              </p>
+
             </div>
 
             <div className="space-y-6">
@@ -33,7 +31,7 @@ export default function ProblemObjective() {
               <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-primary)] uppercase font-primary tracking-wider mb-2">1. Gargalo Operacional (O Mar de PDFs)</h3>
                 <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
-                  Processar laudos imensos, imagens e planilhas "no braço" é inviável. Sem automação, o especialista vira um mero digitador e o principal gargalo da entrega.
+                  Processar laudos e planilhas de forma manual é lento e ineficiente. Sem automação, o especialista consome seu tempo em digitação e tarefas repetitivas.
                 </p>
               </div>
 
@@ -41,7 +39,7 @@ export default function ProblemObjective() {
               <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-secondary)] uppercase font-primary tracking-wider mb-2">2. Gargalo Econômico (A Escala de Horas)</h3>
                 <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
-                  Para faturar mais hoje, depende-se de softwares genéricos ou desenvolvedores caros. Quem entende do problema não sabe criar o sistema, deixando o lucro da escala com intermediários.
+                  Depender de softwares genéricos ou desenvolvedores caros limita o faturamento. Sem autonomia técnica, o especialista deixa a margem de lucro com intermediários.
                 </p>
               </div>
 
@@ -49,7 +47,7 @@ export default function ProblemObjective() {
               <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-accent)] uppercase font-primary tracking-wider mb-2">3. Gargalo Estratégico (Comoditização)</h3>
                 <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
-                  A IA básica está engolindo análises rotineiras. A única proteção real contra a desvalorização profissional é subir de nível: aprender a arquitetar as próprias soluções de IA e automatizar essas análises.
+                  A inteligência artificial básica já substitui análises rotineiras. A única proteção real é evoluir para arquitetar e automatizar suas próprias soluções de IA.
                 </p>
               </div>
             </div>
