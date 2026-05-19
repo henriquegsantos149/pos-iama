@@ -34,7 +34,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
           >
             <img 
               src={`${import.meta.env.BASE_URL}logo-ambientalpro.png`} 
-              alt="Ambiental Pro" 
+              alt="Ambiental Pro - Engenharia, Tecnologia e Inteligência Artificial Aplicada ao Meio Ambiente" 
               className="h-14 md:h-16 w-auto object-contain"
             />
           </a>

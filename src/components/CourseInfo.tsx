@@ -111,7 +111,7 @@ export default function CourseInfo() {
               <div className="flex flex-col items-center gap-2">
                 <img 
                   src={`${import.meta.env.BASE_URL}logo-anhanguera.png`} 
-                  alt="Logo Anhanguera" 
+                  alt="Anhanguera - Selo e Chancela de Excelência de Ensino Superior da Pós-Graduação" 
                   className="h-16 md:h-20 lg:h-24 w-auto object-contain"
                 />
               </div>
