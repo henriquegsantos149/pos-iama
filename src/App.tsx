@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProblemObjective from './components/ProblemObjective'
@@ -15,8 +14,8 @@ import StickyCTA from './components/StickyCTA'
 import LeadModal from './components/LeadModal'
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [checkoutUrl, setCheckoutUrl] = useState('');
+  const isModalOpen = false;
+  const checkoutUrl = '';
 
   const handleOpenModal = (url: string) => {
     // Redireciona diretamente para o link de checkout (SendFlow) em uma nova aba
@@ -24,7 +23,7 @@ function App() {
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    // Modal is temporarily disabled
   };
 
   return (
