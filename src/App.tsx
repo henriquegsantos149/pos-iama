@@ -8,7 +8,7 @@ import PracticalApplications from './components/PracticalApplications'
 import TargetAudience from './components/TargetAudience'
 
 import CourseInfo from './components/CourseInfo'
-import Testimonials from './components/Testimonials'
+// import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
 import StickyCTA from './components/StickyCTA'
