@@ -61,21 +61,26 @@ export default function Hero({ onOpenModal }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg md:text-xl text-[var(--color-brand-light)]/70 mb-8 md:mb-10 max-w-3xl leading-relaxed font-secondary"
         >
-          Aprenda a arquitetar sistemas de IA e criar soluções automatizadas aplicadas ao setor ambiental. A formação definitiva que une engenharia de dados, visão computacional, IoT e agentes cognitivos para liderar o mercado.
+          Aprenda a arquitetar sistemas de IA e criar soluções automatizadas aplicadas ao setor ambiental. A formação definitiva para liderar o mercado.
         </motion.p>
 
-        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
+          className="flex flex-col items-center"
         >
           <button
             onClick={() => onOpenModal(checkoutUrl)}
-            aria-label="Garanta sua pré-matrícula na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente"
-            className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer"
+            aria-label="Garanta sua pré-matrícula na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente e entre no grupo VIP de WhatsApp"
+            className="shape-leaf group relative inline-flex flex-col items-center justify-center gap-1 px-8 md:px-12 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer"
           >
-            <span className="relative z-10 transition-colors uppercase tracking-wider font-primary">Garanta sua Pré-Matrícula</span>
+            <span className="relative z-10 transition-colors uppercase tracking-wider font-primary text-lg md:text-xl leading-none mb-1">
+              Garanta sua Pré-Matrícula
+            </span>
+            <span className="relative z-10 transition-colors uppercase tracking-widest font-secondary text-[10px] md:text-xs opacity-75 font-semibold text-center leading-none">
+              Entre no grupo VIP de WhatsApp para receber a oferta
+            </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
           </button>
         </motion.div>

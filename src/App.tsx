@@ -19,8 +19,8 @@ function App() {
   const [checkoutUrl, setCheckoutUrl] = useState('');
 
   const handleOpenModal = (url: string) => {
-    setCheckoutUrl(url);
-    setIsModalOpen(true);
+    // Redireciona diretamente para o link de checkout (SendFlow) em uma nova aba
+    window.open(url, '_blank');
   };
 
   const handleCloseModal = () => {
