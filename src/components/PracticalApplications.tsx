@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 
 const apps = [
   {
-    image: `${import.meta.env.BASE_URL}applications/app_licensing.png`,
+    image: `${import.meta.env.BASE_URL}applications/enviroasset_dashboard.png`,
     title: "Monitoramento de Licenciamentos",
     desc: "Sistemas inteligentes que varrem portais públicos, extraem prazos críticos de licenças e disparam alertas automáticos para o time."
   },
   {
-    image: `${import.meta.env.BASE_URL}applications/app_rag.png`,
+    image: `${import.meta.env.BASE_URL}applications/agente_pareceres_holograma.jpg`,
     title: "Agente de Pareceres e RAG",
     desc: "Plataformas que varrem dezenas de laudos e PDFs ambientais estruturando os dados e rascunhando pareceres em poucos segundos."
   },
@@ -22,7 +22,7 @@ const apps = [
     desc: "Processamento automático de dados de satélites e drones para classificação de solo e monitoramento de ativos florestais."
   },
   {
-    image: `${import.meta.env.BASE_URL}applications/app_digital_twin.png`,
+    image: `${import.meta.env.BASE_URL}applications/gemeos_digitais.jpg`,
     title: "Simulação de Gêmeos Digitais",
     desc: "Réplicas virtuais de bacias hidrográficas e áreas protegidas para rodar simulações de impacto e testes antes de intervenções reais."
   },

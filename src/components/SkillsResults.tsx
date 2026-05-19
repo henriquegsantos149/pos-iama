@@ -5,7 +5,7 @@ const skills = [
   {
     icon: Database,
     title: "Engenharia de Dados & RAG",
-    desc: "Estruturação e organização de dados não estruturados de laudos e licenças para alimentar modelos de linguagem (LLMs)."
+    desc: "Estruturação e organização de dados de laudos e licenças para alimentar modelos de linguagem (LLMs)."
   },
   {
     icon: Eye,

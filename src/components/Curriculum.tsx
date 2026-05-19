@@ -9,7 +9,7 @@ const modules = [
     faculty: "Victor Silvestre e Vinicius Ragghianti"
   },
   {
-    title: "Arquitetura de Dados Ambientais (Não Estruturados)",
+    title: "Arquitetura de Dados Ambientais",
     objective: "Processar e estruturar grandes volumes de documentos (PDFs, laudos e licenças) para alimentar fluxos RAG e LLMs.",
     practicalFocus: "Gestão de documentos, licenças e textos jurídicos; Estruturação de bancos de dados para suporte a modelos de linguagem (LLMs) e Recuperação Aumentada por Geração (RAG).",
     faculty: "Victor Sacramento"
@@ -82,9 +82,9 @@ export default function Curriculum() {
         
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase tracking-wide">
-            Conteúdo <span className="inline-block bg-brand-gradient text-[var(--color-brand-dark)] px-3 py-1 mt-2 mb-1 shape-leaf transform -skew-x-6"><span className="inline-block transform skew-x-6">Programático</span></span>
+            Eixos <span className="inline-block bg-brand-gradient text-[var(--color-brand-dark)] px-3 py-1 mt-2 mb-1 shape-leaf transform -skew-x-6"><span className="inline-block transform skew-x-6">Temáticos</span></span>
           </h2>
-          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">11 módulos desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
+          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">11 temas fundamentais desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
         </div>
 
         <div className="space-y-4">
@@ -119,13 +119,7 @@ export default function Curriculum() {
                         {mod.objective}
                       </p>
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-accent)] mt-2.5 shrink-0" />
-                      <p className="text-[var(--color-brand-light)]/80 text-base md:text-lg font-secondary">
-                        <strong className="text-[var(--color-brand-accent)] uppercase text-sm tracking-widest block mb-1">O que será abordado</strong>
-                        {mod.practicalFocus}
-                      </p>
-                    </div>
+
                     {false && mod.faculty && (
                       <div className="flex items-start gap-4">
                         <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-secondary)] mt-2.5 shrink-0" />

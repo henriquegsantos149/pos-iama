@@ -105,13 +105,21 @@ export default function CourseInfo() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="md:col-span-1 shape-leaf flex flex-col justify-center items-center bg-white/[0.03] backdrop-blur-sm border border-white/20 p-8 relative overflow-hidden gap-6 shadow-lg shadow-black/40"
           >
-            <h3 className="text-xl font-bold text-[var(--color-brand-light)] font-primary uppercase tracking-wide text-center">Nossos parceiros</h3>
-            <div className="flex items-center justify-center gap-6">
+            <h3 className="text-xl font-bold text-[var(--color-brand-light)] font-primary uppercase tracking-wide text-center">Reconhecimento & Chancela</h3>
+            <div className="flex items-center justify-center gap-6 flex-wrap">
               {/* Anhanguera */}
               <div className="flex flex-col items-center gap-2">
                 <img 
                   src={`${import.meta.env.BASE_URL}logo-anhanguera.png`} 
                   alt="Anhanguera - Selo e Chancela de Excelência de Ensino Superior da Pós-Graduação" 
+                  className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                />
+              </div>
+              {/* MEC */}
+              <div className="flex flex-col items-center gap-2">
+                <img 
+                  src={`${import.meta.env.BASE_URL}mec-badge.png`} 
+                  alt="Selo do MEC - Reconhecimento pelo Ministério da Educação" 
                   className="h-16 md:h-20 lg:h-24 w-auto object-contain"
                 />
               </div>

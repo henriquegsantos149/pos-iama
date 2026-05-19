@@ -38,6 +38,15 @@ export default function Hero({ onOpenModal }: HeroProps) {
               className="h-14 md:h-16 w-auto object-contain"
             />
           </a>
+
+          {/* MEC Seal */}
+          <div className="inline-block">
+            <img 
+              src={`${import.meta.env.BASE_URL}mec-badge.png`} 
+              alt="Selo do MEC - Reconhecimento pelo Ministério da Educação" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
+          </div>
         </motion.div>
 
         {/* Title */}
@@ -45,7 +54,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-3xl sm:text-4xl md:text-[4rem] lg:text-[4.5rem] font-bold tracking-tight mb-6 max-w-5xl uppercase leading-tight font-primary"
+          className="text-2xl sm:text-3xl md:text-[3.25rem] lg:text-[3.75rem] font-bold tracking-tight mb-6 max-w-5xl uppercase leading-tight font-primary"
         >
           Pós-Graduação em <br className="md:block" />
           <span className="inline-block bg-brand-gradient text-[var(--color-brand-dark)] px-3 py-1 md:px-4 md:py-1 mt-2 mb-1 shape-leaf transform -skew-x-6">
@@ -73,16 +82,16 @@ export default function Hero({ onOpenModal }: HeroProps) {
           <button
             onClick={() => onOpenModal(checkoutUrl)}
             aria-label="Garanta sua pré-matrícula na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente e entre no grupo VIP de WhatsApp"
-            className="shape-leaf group relative inline-flex flex-col items-center justify-center gap-1 px-8 md:px-12 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer"
+            className="shape-leaf group relative inline-flex items-center justify-center px-8 md:px-12 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer"
           >
-            <span className="relative z-10 transition-colors uppercase tracking-wider font-primary text-lg md:text-xl leading-none mb-1">
+            <span className="relative z-10 transition-colors uppercase tracking-wider font-primary text-lg md:text-xl leading-none">
               Garanta sua Pré-Matrícula
-            </span>
-            <span className="relative z-10 transition-colors uppercase tracking-widest font-secondary text-[10px] md:text-xs opacity-75 font-semibold text-center leading-none">
-              Entre no grupo VIP de WhatsApp para receber a oferta
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
           </button>
+          <p className="mt-4 text-[var(--color-brand-light)]/60 text-[10px] md:text-xs tracking-widest uppercase font-secondary font-semibold text-center leading-none">
+            Entre no grupo VIP de WhatsApp para receber a oferta
+          </p>
         </motion.div>
 
         {/* Scroll Indicator */}

@@ -4,7 +4,7 @@ import { Users, GraduationCap, CheckCircle } from 'lucide-react';
 const targets = [
   {
     title: "O Gargalo da Operação",
-    desc: "Já automatizou planilhas, domina QGIS e Python básico, mas virou o teto físico da própria entrega de relatórios."
+    desc: "Realiza análises e rotinas ambientais no dia a dia, mas sente que atingiu o limite de produtividade física na elaboração e entrega de relatórios."
   },
   {
     title: "O Consultor Limitado",
