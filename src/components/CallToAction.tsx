@@ -44,7 +44,7 @@ export default function CallToAction({ onOpenModal }: CallToActionProps) {
                 className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto shadow-[0_0_30px_rgba(124,191,57,0.4)] cursor-pointer"
               >
               <span className="relative z-10 flex items-center gap-2 uppercase tracking-wide font-primary">
-                Entrar no Grupo de Pré-Matrícula
+                Garantir Pré-Matrícula
                 <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
               </span>
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
