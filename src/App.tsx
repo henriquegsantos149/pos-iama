@@ -5,6 +5,7 @@ import Curriculum from './components/Curriculum'
 import SkillsResults from './components/SkillsResults'
 import PracticalApplications from './components/PracticalApplications'
 import TargetAudience from './components/TargetAudience'
+import Faculty from './components/Faculty'
 
 import CourseInfo from './components/CourseInfo'
 // import Testimonials from './components/Testimonials'
@@ -35,6 +36,7 @@ function App() {
       <SkillsResults />
       <PracticalApplications />
       <TargetAudience />
+      <Faculty />
       <CourseInfo />
       {/* <Testimonials /> */}
       <FAQ />
