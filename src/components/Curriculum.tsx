@@ -32,12 +32,7 @@ const modules = [
     practicalFocus: "Identificação automática de desmatamento; Classificação avançada de uso do solo com deep learning; Drones e processamento de imagens orbitais.",
     faculty: "@NeloreTech"
   },
-  {
-    title: "Modelos Preditivos para Sistemas Naturais",
-    objective: "Construir modelos de alta precisão para simular desmatamento, comportamento de fauna e riscos de mudanças climáticas.",
-    practicalFocus: "Desenvolvimento de modelos preditivos aplicados ao desmatamento, comportamento de fauna e cenários de mudanças climáticas.",
-    faculty: "Especialistas Convidados"
-  },
+
   {
     title: "Conceitos gerais e principais abordagens de desenvolvimento do software",
     objective: "Dominar os princípios da engenharia de software, ciclos de vida de sistemas e as diferentes abordagens e metodologias de desenvolvimento.",
@@ -90,7 +85,7 @@ export default function Curriculum() {
           <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase tracking-wide">
             Eixos <span className="inline-block bg-brand-gradient text-[var(--color-brand-dark)] px-3 py-1 mt-2 mb-1 shape-leaf transform -skew-x-6"><span className="inline-block transform skew-x-6">Temáticos</span></span>
           </h2>
-          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">12 temas fundamentais desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
+          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">11 temas fundamentais desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
         </div>
 
         <div className="space-y-4">
