@@ -5,27 +5,45 @@ const base = import.meta.env.BASE_URL;
 const facultyMembers = [
   {
     name: "Henrique Gonzalez",
-    title: "ENGENHEIRO AMBIENTAL (UFRJ)",
+    title: "ENGENHEIRO AMBIENTAL (UFRJ) E CO-FUNDADOR DA AMBIENTAL PRO",
     image: `${base}faculty/henrique.png`,
-    resume: "Experiência sólida na área ambiental, focado em geoprocessamento e soluções tecnológicas."
+    resume: "Atua com geotecnologias, inteligência artificial, análise espacial de dados ambientais e gestão de áreas contaminadas."
   },
   {
     name: "Victor Valente Silvestre",
-    title: "ENGENHEIRO AMBIENTAL E PESQUISADOR",
+    title: "ENGENHEIRO SANITARISTA E AMBIENTAL, MESTRE E PESQUISADOR",
     image: `${base}faculty/victor.png`,
-    resume: "Especialista em licenciamento ambiental e IA generativa aplicada ao setor ambiental, com mais de 17 anos de experiência."
+    resume: "Especialista em licenciamento ambiental e IA generativa aplicada ao setor ambiental. Fundador da VIVA Assessoria Ambiental e criador do Método Estudo Ambiental Eficiente com IA."
   },
   {
     name: "Tatiana Pará",
-    title: "ENGENHEIRA AGRÔNOMA E PROFESSORA DO IFPA",
+    title: "ENGENHEIRA AGRÔNOMA, ESPECIALISTA EM GEOTECNOLOGIAS E MESTRE EM DESENVOLVIMENTO RURAL",
     image: `${base}faculty/tatiana.png`,
-    resume: "Atua com geotecnologias, geoprocessamento com IA e inclusão digital na Amazônia."
+    resume: "Professora do IFPA, atua com geotecnologias, geoprocessamento com IA e projetos de inclusão digital e desenvolvimento sustentável na Amazônia."
   },
   {
     name: "Vinícius Ragghianti",
-    title: "ENGENHEIRO AMBIENTAL E SANITARISTA",
+    title: "ENGENHEIRO AMBIENTAL E SANITARISTA, MBA EM GESTÃO DE PROJETOS",
     image: `${base}faculty/vinicius.png`,
-    resume: "Especialista em saneamento, gestão de projetos e IA generativa aplicada à engenharia."
+    resume: "Especialista em saneamento, infraestrutura e IA generativa aplicada à engenharia. Co-fundador da ECHOA Engenharia e ex-presidente da ACESA."
+  },
+  {
+    name: "Ariel Dias",
+    title: "MESTRE EM CIÊNCIA DA COMPUTAÇÃO E AUTOR",
+    image: `${base}faculty/ariel.png`,
+    resume: "Especialista em IA, Ciência de Dados e tecnologias educacionais, com atuação em instituições de ensino e projetos voltados à Indústria 4.0."
+  },
+  {
+    name: "Luís Otávio Perin",
+    title: "ESPECIALISTA EM DESENVOLVIMENTO DE SOFTWARE E CIÊNCIAS CONTÁBEIS",
+    image: `${base}faculty/luis.png`,
+    resume: "Atua nas áreas de arquitetura de software, redes, computação distribuída e educação a distância."
+  },
+  {
+    name: "Danilo Moreira Soares",
+    title: "COORDENADOR DE TI E MESTRE EM ADMINISTRAÇÃO",
+    image: `${base}faculty/danilo.png`,
+    resume: "Especialista em ciência de dados, automação, IA generativa e gestão de processos, com experiência em tecnologia educacional."
   }
 ];
 

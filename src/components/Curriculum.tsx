@@ -15,15 +15,21 @@ const modules = [
     faculty: "Victor Sacramento"
   },
   {
+    title: "IA Generativa na Elaboração de Estudos Ambientais",
+    objective: "Utilizar modelos generativos avançados (LLMs) para otimizar e apoiar a elaboração de laudos, relatórios técnicos e estudos de impacto ambiental.",
+    practicalFocus: "Engenharia de prompts para relatórios; Automatização na redação técnica de estudos de impacto (EIA/RIMA); Análise assistida por LLMs de conformidade jurídica.",
+    faculty: "Especialistas Convidados"
+  },
+  {
     title: "Internet das Coisas (IoT) e Redes de Sensores em Tempo Real",
     objective: "Projetar redes de sensores e sistemas de telemetria para coleta e captação contínua de dados ambientais em tempo real.",
     practicalFocus: "Coleta contínua de dados de qualidade de ar e água; Redes de sensores; Protocolos de comunicação e telemetria ambiental em tempo real.",
     faculty: "Especialistas Convidados"
   },
   {
-    title: "Visão Computacional Aplicada ao Meio Ambiente",
-    objective: "Automatizar o processamento visual de dados ambientais com deep learning em imagens de satélite, radar e drones.",
-    practicalFocus: "Identificação automática de espécies; Classificação de uso do solo; Detecção de padrões em imagens orbitais e de drones.",
+    title: "IA e Visão Computacional na Análise Geoespacial",
+    objective: "Processar dados espaciais e imagens aéreas ou de satélite com algoritmos de Deep Learning para identificar padrões e alterações na cobertura terrestre.",
+    practicalFocus: "Identificação automática de desmatamento; Classificação avançada de uso do solo com deep learning; Drones e processamento de imagens orbitais.",
     faculty: "@NeloreTech"
   },
   {
@@ -33,22 +39,16 @@ const modules = [
     faculty: "Especialistas Convidados"
   },
   {
-    title: "Desenvolvimento de Software Orientado a IA (AI-Driven Dev)",
-    objective: "Criar, programar e implantar suas próprias ferramentas e soluções ambientais usando IA acelerada (AI-Driven Dev).",
-    practicalFocus: "Uso de ferramentas e agentes de IA para criação acelerada de soluções customizadas; Prototipagem rápida de ferramentas ambientais.",
-    faculty: "Henrique Gonzalez"
+    title: "Conceitos gerais e principais abordagens de desenvolvimento do software",
+    objective: "Dominar os princípios da engenharia de software, ciclos de vida de sistemas e as diferentes abordagens e metodologias de desenvolvimento.",
+    practicalFocus: "Metodologias ágeis e tradicionais; Ciclo de vida e qualidade de software; Conceitos fundamentais de arquitetura e documentação de sistemas.",
+    faculty: "Especialistas Convidados"
   },
   {
-    title: "Arquitetura de Agentes Autônomos e Cognitivos",
-    objective: "Orquestrar múltiplos agentes autônomos e LLMs para automatizar análises complexas e tomada de decisão independente.",
-    practicalFocus: "Lógica de raciocínio e execução de tarefas por IA; Orquestração de agentes para fluxos complexos de tomada de decisão.",
+    title: "Desenvolvimento de Sistemas com Agentes Autônomos",
+    objective: "Projetar e construir sistemas baseados em múltiplos agentes de IA que tomam decisões, cooperam e automatizam fluxos operacionais complexos.",
+    practicalFocus: "Arquitetura e orquestração de múltiplos agentes; Frameworks modernos para agentes autônomos; Integração de LLMs a ferramentas externas.",
     faculty: "Henrique Gonzalez"
-  },
-  {
-    title: "Interoperabilidade e Ecossistemas de Dashboards e Geoportais",
-    objective: "Integrar APIs e bancos de dados espaciais para criar dashboards interativos e geoportais ambientais interoperáveis.",
-    practicalFocus: "Centralização de camadas geográficas; Comunicação entre sistemas (APIs); Integração de documentação técnica com bases espaciais.",
-    faculty: "Victor Sacramento"
   },
   {
     title: "Gêmeos Digitais de Ecossistemas (Digital Twins)",
@@ -63,9 +63,15 @@ const modules = [
     faculty: "Especialistas Convidados"
   },
   {
-    title: "Gestão de Projetos Tecnológicos de Alto Impacto",
-    objective: "Liderar projetos de tecnologia ambiental aplicando metodologias ágeis e análise de viabilidade econômico-financeira.",
-    practicalFocus: "Metodologias ágeis aplicadas ao desenvolvimento de soluções ambientais; Gestão de equipes multidisciplinares e viabilidade de projetos tech.",
+    title: "Teste e Inspeção de Software: Técnicas e Automatização",
+    objective: "Aprender e aplicar técnicas de teste e inspeção de código para garantir a qualidade, confiabilidade e estabilidade de sistemas baseados em IA.",
+    practicalFocus: "Automação de testes de unidade e integração; Estratégias de testes para sistemas complexos; Inspeção estática de código e pipelines de CI/CD.",
+    faculty: "Especialistas Convidados"
+  },
+  {
+    title: "Análise e modelagem de negócios (BABOK/Product Owner)",
+    objective: "Alinhar o desenvolvimento de soluções de software aos objetivos estratégicos de negócios utilizando guias de melhores práticas como o BABOK.",
+    practicalFocus: "Papel do Product Owner em projetos de tecnologia; Técnicas de modelagem de processos e análise de requisitos; Gestão ágil de backlog e valor de entrega.",
     faculty: "Especialistas Convidados"
   }
 ];
@@ -84,7 +90,7 @@ export default function Curriculum() {
           <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase tracking-wide">
             Eixos <span className="inline-block bg-brand-gradient text-[var(--color-brand-dark)] px-3 py-1 mt-2 mb-1 shape-leaf transform -skew-x-6"><span className="inline-block transform skew-x-6">Temáticos</span></span>
           </h2>
-          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">11 temas fundamentais desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
+          <p className="text-lg md:text-xl text-[var(--color-brand-light)]/85 max-w-2xl mx-auto font-secondary">12 temas fundamentais desenhados para conectar a teoria ambiental ao desenvolvimento de IA de ponta.</p>
         </div>
 
         <div className="space-y-4">
