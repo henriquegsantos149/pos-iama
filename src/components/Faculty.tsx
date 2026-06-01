@@ -10,6 +10,12 @@ const facultyMembers = [
     resume: "Atua com geotecnologias, inteligência artificial, análise espacial de dados ambientais e gestão de áreas contaminadas."
   },
   {
+    name: "Hermann Fernandes",
+    title: "ENGENHEIRO AMBIENTAL (UFRJ) E ESPECIALISTA EM CIÊNCIA DE DADOS",
+    image: `${base}faculty/hermann.png`,
+    resume: "Atua com gestão de casos ambientais complexos, análise de dados, geotecnologias e inovação aplicada à área ambiental."
+  },
+  {
     name: "Victor Valente Silvestre",
     title: "ENGENHEIRO SANITARISTA E AMBIENTAL, MESTRE E PESQUISADOR",
     image: `${base}faculty/victor.png`,
