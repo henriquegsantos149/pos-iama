@@ -6,7 +6,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenModal }: HeroProps) {
-  const checkoutUrl = "https://sndflw.com/i/AlPWxxjxTZ6edSfzJtaF";
+  const checkoutUrl = "https://tinyurl.com/pedagogicoambpro";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--color-brand-dark-light)]">
@@ -81,17 +81,14 @@ export default function Hero({ onOpenModal }: HeroProps) {
         >
           <button
             onClick={() => onOpenModal(checkoutUrl)}
-            aria-label="Garanta sua pré-matrícula na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente e entre no grupo VIP de WhatsApp"
+            aria-label="Mais informações pelo WhatsApp sobre a Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente"
             className="shape-leaf group relative inline-flex items-center justify-center px-8 md:px-12 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer"
           >
             <span className="relative z-10 transition-colors uppercase tracking-wider font-primary text-lg md:text-xl leading-none">
-              Garanta sua Pré-Matrícula
+              Mais informações pelo WhatsApp
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
           </button>
-          <p className="mt-4 text-[var(--color-brand-light)]/60 text-[10px] md:text-xs tracking-widest uppercase font-secondary font-semibold text-center leading-none">
-            Entre no grupo VIP de WhatsApp para receber a oferta no dia 28 de maio
-          </p>
         </motion.div>
 
         {/* Scroll Indicator */}

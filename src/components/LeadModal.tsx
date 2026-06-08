@@ -118,7 +118,7 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl }: LeadModalPro
               Falta Pouco!
             </h2>
             <p className="text-[var(--color-brand-light)]/60 font-secondary">
-              Preencha os dados abaixo para garantir sua pré-matrícula na Pós IA.MA.
+              Preencha os dados abaixo para obter mais informações pelo WhatsApp.
             </p>
           </div>
 
@@ -240,7 +240,7 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl }: LeadModalPro
                 </>
               ) : (
                 <>
-                  Garantir Pré-Matrícula
+                  Mais informações pelo WhatsApp
                   <Send className="w-5 h-5" />
                 </>
               )}

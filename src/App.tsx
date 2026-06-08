@@ -16,7 +16,7 @@ import LeadModal from './components/LeadModal'
 
 function App() {
   const isModalOpen = false;
-  const checkoutUrl = '';
+  const checkoutUrl = 'https://tinyurl.com/pedagogicoambpro';
 
   const handleOpenModal = (url: string) => {
     // Redireciona diretamente para o link de checkout (SendFlow) em uma nova aba

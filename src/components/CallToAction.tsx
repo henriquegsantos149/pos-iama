@@ -6,7 +6,7 @@ interface CallToActionProps {
 }
 
 export default function CallToAction({ onOpenModal }: CallToActionProps) {
-  const checkoutUrl = "https://sndflw.com/i/AlPWxxjxTZ6edSfzJtaF";
+  const checkoutUrl = "https://tinyurl.com/pedagogicoambpro";
 
   return (
     <section id="inscreva-se" className="py-16 md:py-24 relative overflow-hidden bg-[var(--color-brand-dark)] border-t border-white/5">
@@ -37,28 +37,18 @@ export default function CallToAction({ onOpenModal }: CallToActionProps) {
             Junte-se à próxima turma e torne-se um especialista em Inteligência Artificial Aplicada ao Meio Ambiente.
           </p>
           
-          <div className="relative z-10 space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:gap-6">
+          <div className="relative z-10 flex justify-center">
               <button
                 onClick={() => onOpenModal(checkoutUrl)}
-                aria-label="Garanta sua pré-matrícula na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente via Plataforma de Pagamento"
+                aria-label="Mais informações pelo WhatsApp"
                 className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto shadow-[0_0_30px_rgba(124,191,57,0.4)] cursor-pointer"
               >
               <span className="relative z-10 flex items-center gap-2 uppercase tracking-wide font-primary">
-                Garantir Pré-Matrícula
+                Mais informações pelo WhatsApp
                 <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
               </span>
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
             </button>
-            
-            <a 
-              href="https://wa.link/n23pkm" 
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Falar com um consultor via WhatsApp"
-              className="shape-leaf-inverse inline-flex items-center justify-center gap-2 px-10 py-5 bg-transparent border border-white/20 text-[var(--color-brand-light)] font-bold text-lg transition-all hover:bg-white/5 hover:border-[var(--color-brand-light)] w-full sm:w-auto uppercase tracking-wide font-primary"
-            >
-              Falar com um consultor
-            </a>
           </div>
 
         </motion.div>

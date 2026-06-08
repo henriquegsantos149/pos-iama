@@ -7,7 +7,7 @@ interface StickyCTAProps {
 }
 
 export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
-  const checkoutUrl = "https://sndflw.com/i/AlPWxxjxTZ6edSfzJtaF";
+  const checkoutUrl = "https://tinyurl.com/pedagogicoambpro";
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -46,8 +46,8 @@ export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
             
             <div className="relative z-10 flex items-center gap-2 md:gap-3">
               <MessageCircle className="w-5 h-5 md:w-6 md:h-6 animate-pulse" />
-              <span className="font-primary font-extrabold uppercase tracking-wider text-base md:text-lg">
-                Garantir Pré-Matrícula
+              <span className="font-primary font-extrabold uppercase tracking-wider text-xs sm:text-sm md:text-base leading-tight">
+                Mais informações pelo WhatsApp
               </span>
             </div>
 
