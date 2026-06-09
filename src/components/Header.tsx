@@ -18,7 +18,7 @@ export default function Header() {
             className="cursor-pointer"
           >
             <img 
-              src={`${import.meta.env.BASE_URL}logo.png`} 
+              src={`${import.meta.env.BASE_URL}logo.webp`} 
               alt="Pós IA.MA Logo" 
               className="h-12 md:h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
             />

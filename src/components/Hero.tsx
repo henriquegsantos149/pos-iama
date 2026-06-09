@@ -33,7 +33,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
             className="inline-block transition-opacity duration-300 hover:opacity-80"
           >
             <img 
-              src={`${import.meta.env.BASE_URL}logo-ambientalpro.png`} 
+              src={`${import.meta.env.BASE_URL}logo-ambientalpro.webp`} 
               alt="Ambiental Pro - Engenharia, Tecnologia e Inteligência Artificial Aplicada ao Meio Ambiente" 
               className="h-14 md:h-16 w-auto object-contain"
             />
@@ -42,7 +42,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
           {/* MEC Seal */}
           <div className="inline-block">
             <img 
-              src={`${import.meta.env.BASE_URL}mec-badge.png`} 
+              src={`${import.meta.env.BASE_URL}mec-badge.webp`} 
               alt="Selo do MEC - Reconhecimento pelo Ministério da Educação" 
               className="h-16 md:h-20 w-auto object-contain"
             />

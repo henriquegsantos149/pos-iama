@@ -90,9 +90,10 @@ export default function CourseInfo() {
 
             <div className="flex-shrink-0 w-36 h-36 shape-leaf bg-white/5 border border-white/10 flex items-center justify-center relative z-10 p-4">
               <img 
-                src={`${import.meta.env.BASE_URL}logo-anhanguera.png`} 
+                src={`${import.meta.env.BASE_URL}logo-anhanguera.webp`} 
                 alt="Anhanguera - Selo e Chancela de Excelência de Ensino Superior da Pós-Graduação" 
                 className="max-h-26 md:max-h-28 w-auto object-contain"
+                loading="lazy"
               />
             </div>
             <div className="relative z-10">
@@ -118,9 +119,10 @@ export default function CourseInfo() {
 
             <div className="relative z-10">
               <img 
-                src={`${import.meta.env.BASE_URL}mec-badge.png`} 
+                src={`${import.meta.env.BASE_URL}mec-badge.webp`} 
                 alt="Selo do MEC - Reconhecimento pelo Ministério da Educação com Nota Máxima" 
                 className="h-20 md:h-24 w-auto object-contain"
+                loading="lazy"
               />
             </div>
           </motion.div>

@@ -5,10 +5,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const base = import.meta.env.BASE_URL;
 
 const testimonials = [
-  { img: `${base}testimonials/testi1.jpg`, alt: "Depoimento Luciana Souza" },
-  { img: `${base}testimonials/testi2.png`, alt: "Depoimento Thiago Martins" },
-  { img: `${base}testimonials/testi3.png`, alt: "Depoimento Aluno" },
-  { img: `${base}testimonials/testi4.jpg`, alt: "Depoimento Rafael" },
+  { img: `${base}testimonials/testi1.webp`, alt: "Depoimento Luciana Souza" },
+  { img: `${base}testimonials/testi2.webp`, alt: "Depoimento Thiago Martins" },
+  { img: `${base}testimonials/testi3.webp`, alt: "Depoimento Aluno" },
+  { img: `${base}testimonials/testi4.webp`, alt: "Depoimento Rafael" },
 ];
 
 export default function Testimonials() {
@@ -87,6 +87,7 @@ export default function Testimonials() {
                       src={testi.img} 
                       alt={testi.alt} 
                       className="w-full h-auto rounded-lg"
+                      loading="lazy"
                     />
                   </div>
                 </motion.div>

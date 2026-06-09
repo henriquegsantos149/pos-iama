@@ -7,55 +7,55 @@ const facultyMembers = [
   {
     name: "Henrique Gonzalez",
     title: "ENGENHEIRO AMBIENTAL (UFRJ) E CO-FUNDADOR DA AMBIENTAL PRO",
-    image: `${base}faculty/henrique.png`,
+    image: `${base}faculty/henrique.webp`,
     resume: "Atua com geotecnologias, inteligência artificial, análise espacial de dados ambientais e gestão de áreas contaminadas."
   },
   {
     name: "Hermann Fernandes",
     title: "ENGENHEIRO AMBIENTAL (UFRJ) E ESPECIALISTA EM CIÊNCIA DE DADOS",
-    image: `${base}faculty/hermann.png`,
+    image: `${base}faculty/hermann.webp`,
     resume: "Atua com gestão de casos ambientais complexos, análise de dados, geotecnologias e inovação aplicada à área ambiental."
   },
   {
     name: "Victor Valente Silvestre",
     title: "ENGENHEIRO SANITARISTA E AMBIENTAL, MESTRE E PESQUISADOR",
-    image: `${base}faculty/victor.png`,
+    image: `${base}faculty/victor.webp`,
     resume: "Especialista em licenciamento ambiental e IA generativa aplicada ao setor ambiental. Fundador da VIVA Assessoria Ambiental e criador do Método Estudo Ambiental Eficiente com IA."
   },
   {
     name: "Tatiana Pará",
     title: "ENGENHEIRA AGRÔNOMA, ESPECIALISTA EM GEOTECNOLOGIAS E MESTRE EM DESENVOLVIMENTO RURAL",
-    image: `${base}faculty/tatiana.png`,
+    image: `${base}faculty/tatiana.webp`,
     resume: "Professora do IFPA, atua com geotecnologias, geoprocessamento com IA e projetos de inclusão digital e desenvolvimento sustentável na Amazônia."
   },
   {
     name: "Vinícius Ragghianti",
     title: "ENGENHEIRO AMBIENTAL E SANITARISTA, MBA EM GESTÃO DE PROJETOS",
-    image: `${base}faculty/vinicius.png`,
+    image: `${base}faculty/vinicius.webp`,
     resume: "Especialista em saneamento, infraestrutura e IA generativa aplicada à engenharia. Co-fundador da ECHOA Engenharia e ex-presidente da ACESA."
   },
   {
     name: "Ariel Dias",
     title: "MESTRE EM CIÊNCIA DA COMPUTAÇÃO E AUTOR",
-    image: `${base}faculty/ariel.png`,
+    image: `${base}faculty/ariel.webp`,
     resume: "Especialista em IA, Ciência de Dados e tecnologias educacionais, com atuação em instituições de ensino e projetos voltados à Indústria 4.0."
   },
   {
     name: "Luís Otávio Perin",
     title: "ESPECIALISTA EM DESENVOLVIMENTO DE SOFTWARE E CIÊNCIAS CONTÁBEIS",
-    image: `${base}faculty/luis.png`,
+    image: `${base}faculty/luis.webp`,
     resume: "Atua nas áreas de arquitetura de software, redes, computação distribuída e educação a distância."
   },
   {
     name: "Danilo Moreira Soares",
     title: "COORDENADOR DE TI E MESTRE EM ADMINISTRAÇÃO",
-    image: `${base}faculty/danilo.png`,
+    image: `${base}faculty/danilo.webp`,
     resume: "Especialista em ciência de dados, automação, IA generativa e gestão de processos, com experiência em tecnologia educacional."
   },
   {
     name: "Guilherme Modena",
     title: "ENGENHEIRO ELETRICISTA E CEO DA CLIMAREAD",
-    image: `${base}faculty/guilherme.png`,
+    image: `${base}faculty/guilherme.webp`,
     resume: "Especialista em monitoramento ambiental, automação, sistemas embarcados e soluções IoT, com ampla experiência no desenvolvimento de tecnologias para aquisição e análise de dados ambientais."
   }
 ];
@@ -173,6 +173,7 @@ export default function Faculty() {
                       src={member.image}
                       alt={`${member.name} – Professor da Pós-Graduação`}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-in-out"
+                      loading="lazy"
                     />
                   </div>
 
