@@ -22,7 +22,7 @@ const targets = [
 
 export default function TargetAudience() {
   return (
-    <section className="py-16 md:py-24 bg-[var(--color-brand-dark)] border-y border-white/5 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[var(--color-brand-dark-light)] border-y border-black/5 relative overflow-hidden">
       {/* Decorative gradient blur */}
       <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-gradient opacity-[0.05] blur-[80px]"></div>
 
@@ -38,17 +38,17 @@ export default function TargetAudience() {
             <Users className="w-5 h-5" />
             <span>Perfil do Aluno</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-primary uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-primary uppercase leading-tight text-[var(--color-brand-dark)]">
             Para quem é esta <span className="text-brand-gradient">Pós-Graduação?</span>
           </h2>
           <div className="space-y-4 mt-8">
             {targets.map((item, i) => (
-              <div key={i} className="bg-white/[0.02] border border-white/5 p-5 shape-leaf group hover:border-[var(--color-brand-primary)]/40 transition-all">
+              <div key={i} className="bg-black/[0.03] border border-black/10 p-5 shape-leaf group hover:border-[var(--color-brand-primary)]/40 transition-all">
                 <div className="flex items-center gap-3 mb-2">
                   <CheckCircle className="w-5 h-5 text-[var(--color-brand-primary)] shrink-0 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-bold text-[var(--color-brand-light)] uppercase font-primary tracking-wide text-base">{item.title}</h4>
+                  <h4 className="font-bold text-[var(--color-brand-dark)] uppercase font-primary tracking-wide text-base">{item.title}</h4>
                 </div>
-                <p className="text-base text-[var(--color-brand-light)]/85 font-secondary pl-8 leading-relaxed">{item.desc}</p>
+                <p className="text-base text-[var(--color-brand-dark)]/85 font-secondary pl-8 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

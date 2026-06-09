@@ -127,7 +127,7 @@ export default function Faculty() {
   }, [isTransitioning]);
 
   return (
-    <section id="professores" className="py-16 md:py-24 bg-[var(--color-brand-dark-light)] relative overflow-hidden border-t border-white/5">
+    <section id="professores" className="py-16 md:py-24 bg-[var(--color-brand-dark)] relative overflow-hidden border-t border-white/5">
       {/* Decorative subtle gradient glow */}
       <div className="absolute -top-24 -left-24 w-72 h-72 bg-brand-gradient opacity-[0.03] blur-[80px] pointer-events-none"></div>
       

@@ -3,7 +3,7 @@ import { AlertCircle, TrendingUp } from 'lucide-react';
 
 export default function ProblemObjective() {
   return (
-    <section id="problema" className="py-16 md:py-24 relative overflow-hidden bg-[var(--color-brand-dark)]">
+    <section id="problema" className="py-16 md:py-24 relative overflow-hidden bg-[var(--color-brand-dark-light)]">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
@@ -20,7 +20,7 @@ export default function ProblemObjective() {
                 <AlertCircle className="w-5 h-5" />
                 <span>O Diagnóstico do Setor</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase leading-tight">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase leading-tight text-[var(--color-brand-dark)]">
                 As três camadas de gargalo do <span className="text-brand-gradient">profissional ambiental</span>
               </h2>
 
@@ -28,25 +28,25 @@ export default function ProblemObjective() {
 
             <div className="space-y-6">
               {/* Operacional */}
-              <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
+              <div className="bg-black/[0.03] border border-black/10 p-6 shape-leaf hover:border-black/20 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-primary)] uppercase font-primary tracking-wider mb-2">1. Gargalo Operacional (O Mar de PDFs)</h3>
-                <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
+                <p className="text-base text-[var(--color-brand-dark)]/85 leading-relaxed font-secondary">
                   Processar laudos e planilhas de forma manual é lento e ineficiente. Sem automação, o especialista consome seu tempo em digitação e tarefas repetitivas.
                 </p>
               </div>
 
               {/* Econômica */}
-              <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
+              <div className="bg-black/[0.03] border border-black/10 p-6 shape-leaf hover:border-black/20 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-secondary)] uppercase font-primary tracking-wider mb-2">2. Gargalo Econômico (A Escala de Horas)</h3>
-                <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
+                <p className="text-base text-[var(--color-brand-dark)]/85 leading-relaxed font-secondary">
                   Depender de softwares genéricos ou desenvolvedores caros limita o faturamento. Sem autonomia técnica, o especialista deixa a margem de lucro com intermediários.
                 </p>
               </div>
 
               {/* Estratégica */}
-              <div className="bg-white/[0.02] border border-white/5 p-6 shape-leaf hover:border-white/10 transition-colors">
+              <div className="bg-black/[0.03] border border-black/10 p-6 shape-leaf hover:border-black/20 transition-colors">
                 <h3 className="text-lg font-bold text-[var(--color-brand-accent)] uppercase font-primary tracking-wider mb-2">3. Gargalo Estratégico (Comoditização)</h3>
-                <p className="text-base text-[var(--color-brand-light)]/85 leading-relaxed font-secondary">
+                <p className="text-base text-[var(--color-brand-dark)]/85 leading-relaxed font-secondary">
                   A inteligência artificial básica já substitui análises rotineiras. A única proteção real é evoluir para arquitetar e automatizar suas próprias soluções de IA.
                 </p>
               </div>

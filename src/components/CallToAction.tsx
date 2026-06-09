@@ -9,11 +9,8 @@ export default function CallToAction({ onOpenModal }: CallToActionProps) {
   const checkoutUrl = "https://tinyurl.com/pedagogicoambpro";
 
   return (
-    <section id="inscreva-se" className="py-16 md:py-24 relative overflow-hidden bg-[var(--color-brand-dark)] border-t border-white/5">
+    <section id="inscreva-se" className="py-16 md:py-24 relative overflow-hidden bg-[var(--color-brand-dark-light)] border-t border-black/5">
       
-      {/* Background radial gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(124,191,57,0.15)_0%,rgba(0,13,20,1)_70%)] pointer-events-none"></div>
-
       <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
         
         <motion.div
@@ -21,7 +18,7 @@ export default function CallToAction({ onOpenModal }: CallToActionProps) {
            whileInView={{ opacity: 1, scale: 1 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
-           className="shape-leaf bg-black/50 border border-[var(--color-brand-secondary)]/30 p-12 md:p-20 shadow-[0_0_50px_rgba(22,140,64,0.1)] relative overflow-hidden backdrop-blur-sm"
+           className="shape-leaf bg-[var(--color-brand-dark)] border border-white/10 p-12 md:p-20 shadow-2xl relative overflow-hidden"
         >
           {/* subtle glowing lines to represent "tech" limits */}
           <div className="absolute top-0 left-0 w-full height-[2px] bg-brand-gradient opacity-50"></div>

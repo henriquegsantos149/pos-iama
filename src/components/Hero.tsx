@@ -9,7 +9,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
   const checkoutUrl = "https://tinyurl.com/pedagogicoambpro";
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--color-brand-dark-light)]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--color-brand-dark)]">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid opacity-70"></div>
       

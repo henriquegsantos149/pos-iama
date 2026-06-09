@@ -36,16 +36,16 @@ const skills = [
 
 export default function SkillsResults() {
   return (
-    <section className="py-16 md:py-24 bg-[var(--color-brand-dark)] relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[var(--color-brand-dark-light)] relative overflow-hidden">
       {/* background grid */}
       <div className="absolute inset-0 bg-grid opacity-[0.05]"></div>
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase tracking-wide">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 font-primary uppercase tracking-wide text-[var(--color-brand-dark)]">
             Habilidades e <span className="text-brand-gradient">Resultados Esperados</span>
           </h2>
-          <p className="text-[var(--color-brand-light)]/70 max-w-2xl mx-auto">Desenvolva as competências mais valorizadas pelo mercado de geotecnologias.</p>
+          <p className="text-[var(--color-brand-dark)]/70 max-w-2xl mx-auto font-secondary">Desenvolva as competências mais valorizadas pelo mercado de geotecnologias.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -56,15 +56,15 @@ export default function SkillsResults() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-8 shape-leaf bg-[var(--color-brand-dark)] border border-white/5 hover:border-[var(--color-brand-primary)]/40 transition-all"
+              className="group p-8 shape-leaf bg-white border border-black/10 hover:border-[var(--color-brand-primary)]/40 transition-all shadow-md"
             >
-              <div className="w-12 h-12 shape-leaf bg-white/5 flex items-center justify-center mb-6 group-hover:bg-brand-gradient group-hover:text-white transition-all">
-                <skill.icon className="w-6 h-6" />
+              <div className="w-12 h-12 shape-leaf bg-black/5 flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-primary)]/10 transition-all duration-300">
+                <skill.icon className="w-6 h-6 text-[var(--color-brand-dark)] group-hover:text-[var(--color-brand-secondary)] transition-colors duration-300" />
               </div>
-              <h3 className="text-xl font-bold mb-3 font-primary uppercase tracking-wide group-hover:text-[var(--color-brand-primary)] transition-colors">
+              <h3 className="text-xl font-bold mb-3 font-primary uppercase tracking-wide text-[var(--color-brand-dark)] group-hover:text-[var(--color-brand-primary)] transition-colors">
                 {skill.title}
               </h3>
-              <p className="text-[var(--color-brand-light)]/60 font-secondary leading-relaxed">
+              <p className="text-[var(--color-brand-dark)]/70 font-secondary leading-relaxed">
                 {skill.desc}
               </p>
             </motion.div>

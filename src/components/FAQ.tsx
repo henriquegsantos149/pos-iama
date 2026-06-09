@@ -18,6 +18,14 @@ const faqs = [
   {
     q: "Quais tecnologias eu vou dominar?",
     a: "Você aprenderá a integrar bancos de dados não estruturados com modelos de linguagem (RAG), processamento de imagens orbitais via visão computacional, telemetria contínua com sensores IoT e a publicação de dashboards dinâmicos integrados com IAs."
+  },
+  {
+    q: "O diploma é reconhecido pelo MEC?",
+    a: "Sim. A nossa pós-graduação é chancelada pela Anhanguera, uma instituição de ensino reconhecida com nota máxima (Nota 5) pelo MEC. O diploma emitido é de Especialização (Lato Sensu) e tem validade em todo o território nacional."
+  },
+  {
+    q: "Como funciona o suporte para tirar dúvidas de código ou projetos?",
+    a: "Você terá suporte direto e ativo através dos nossos canais de atendimento e da comunidade exclusiva de alunos."
   }
 ];
 
@@ -25,7 +33,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-[var(--color-brand-dark-light)] border-t border-white/5">
+    <section id="faq" className="py-16 md:py-24 bg-[var(--color-brand-dark)] border-t border-white/5">
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="text-center mb-16">
