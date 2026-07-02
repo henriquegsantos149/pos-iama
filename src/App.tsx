@@ -8,6 +8,7 @@ import TargetAudience from './components/TargetAudience'
 import Faculty from './components/Faculty'
 
 import CourseInfo from './components/CourseInfo'
+import Pricing from './components/Pricing'
 // import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
@@ -16,10 +17,10 @@ import LeadModal from './components/LeadModal'
 
 function App() {
   const isModalOpen = false;
-  const checkoutUrl = 'https://tinyurl.com/pedagogicoambpro';
+  const checkoutUrl = 'https://pay.voompcreators.com.br/14929';
 
   const handleOpenModal = (url: string) => {
-    // Redireciona diretamente para o link de checkout (SendFlow) em uma nova aba
+    // Redireciona diretamente para o link de checkout em uma nova aba
     window.open(url, '_blank');
   };
 
@@ -38,6 +39,7 @@ function App() {
       <TargetAudience />
       <Faculty />
       <CourseInfo />
+      <Pricing onOpenModal={handleOpenModal} />
       {/* <Testimonials /> */}
       <FAQ />
       <CallToAction onOpenModal={handleOpenModal} />

@@ -22,12 +22,7 @@ const facultyMembers = [
     image: `${base}faculty/victor.webp`,
     resume: "Especialista em licenciamento ambiental e IA generativa aplicada ao setor ambiental. Fundador da VIVA Assessoria Ambiental e criador do Método Estudo Ambiental Eficiente com IA."
   },
-  {
-    name: "Tatiana Pará",
-    title: "ENGENHEIRA AGRÔNOMA, ESPECIALISTA EM GEOTECNOLOGIAS E MESTRE EM DESENVOLVIMENTO RURAL",
-    image: `${base}faculty/tatiana.webp`,
-    resume: "Professora do IFPA, atua com geotecnologias, geoprocessamento com IA e projetos de inclusão digital e desenvolvimento sustentável na Amazônia."
-  },
+
   {
     name: "Vinícius Ragghianti",
     title: "ENGENHEIRO AMBIENTAL E SANITARISTA, MBA EM GESTÃO DE PROJETOS",
