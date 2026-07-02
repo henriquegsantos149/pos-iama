@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProblemObjective from './components/ProblemObjective'
@@ -16,16 +17,20 @@ import StickyCTA from './components/StickyCTA'
 import LeadModal from './components/LeadModal'
 
 function App() {
-  const isModalOpen = false;
-  const checkoutUrl = 'https://pay.voompcreators.com.br/14929';
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeUrl, setActiveUrl] = useState('https://pay.voompcreators.com.br/14929');
 
   const handleOpenModal = (url: string) => {
-    // Redireciona diretamente para o link de checkout em uma nova aba
-    window.open(url, '_blank');
+    if (url.includes('tinyurl.com') || url.includes('wa.link') || url.includes('whatsapp') || url.includes('api.whatsapp.com')) {
+      window.open(url, '_blank');
+    } else {
+      setActiveUrl(url);
+      setIsModalOpen(true);
+    }
   };
 
   const handleCloseModal = () => {
-    // Modal is temporarily disabled
+    setIsModalOpen(false);
   };
 
   return (
@@ -49,7 +54,7 @@ function App() {
       <LeadModal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal} 
-        checkoutUrl={checkoutUrl} 
+        checkoutUrl={activeUrl} 
       />
       
       <footer className="bg-black/60 border-t border-white/5 py-10 text-center text-[var(--color-brand-light)]/40 text-sm">
