@@ -29,11 +29,20 @@ const faqs = [
   }
 ];
 
-export default function FAQ() {
+interface FAQProps {
+  bgVariant?: 'light' | 'dark';
+}
+
+export default function FAQ({ bgVariant = 'light' }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const bgClass = bgVariant === 'dark' ? 'bg-[var(--color-brand-dark)]' : 'bg-[var(--color-brand-dark-light)]';
+  const textClass = bgVariant === 'dark' ? 'text-[var(--color-brand-light)]' : 'text-[var(--color-brand-dark)]';
+  const textMutedClass = bgVariant === 'dark' ? 'text-[var(--color-brand-light)]/70' : 'text-[var(--color-brand-dark)]/70';
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-[var(--color-brand-dark-light)] border-t border-black/5">
+    <section id="faq" className={`py-16 md:py-24 ${bgClass} border-t border-black/5`}>
+
+
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="text-center mb-16">
@@ -42,11 +51,12 @@ export default function FAQ() {
               <HelpCircle className="w-6 h-6" />
             </div>
           </div>
-          <h2 className="text-3xl font-bold mb-4 font-primary uppercase tracking-wide text-[var(--color-brand-dark)]">
+          <h2 className={`text-3xl font-bold mb-4 font-primary uppercase tracking-wide ${textClass}`}>
             Perguntas <span className="text-brand-gradient">Frequentes</span>
           </h2>
-          <p className="text-[var(--color-brand-dark)]/70">Tire suas dúvidas sobre a metodologia, certificação e acesso.</p>
+          <p className={textMutedClass}>Tire suas dúvidas sobre a metodologia, certificação e acesso.</p>
         </div>
+
 
         <div className="space-y-4">
           {faqs.map((faq, index) => {

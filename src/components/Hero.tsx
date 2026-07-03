@@ -3,9 +3,10 @@ import { ChevronDown } from 'lucide-react';
 
 interface HeroProps {
   onOpenModal: (url: string) => void;
+  isWaitingList?: boolean;
 }
 
-export default function Hero({ onOpenModal }: HeroProps) {
+export default function Hero({ onOpenModal, isWaitingList = false }: HeroProps) {
   const checkoutUrl = "https://pay.voompcreators.com.br/14929";
 
   return (
@@ -81,14 +82,15 @@ export default function Hero({ onOpenModal }: HeroProps) {
         >
           <button
             onClick={() => onOpenModal(checkoutUrl)}
-            aria-label="Matricule-se agora na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente"
+            aria-label={isWaitingList ? "Entrar na Lista de Espera da Pós-Graduação em Inteligência Artificial" : "Matricule-se agora na Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente"}
             className="shape-leaf inline-flex items-center justify-center px-8 md:px-12 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold transition-all hover:scale-105 hover:brightness-110 active:scale-95 shadow-[0_0_25px_rgba(124,191,57,0.3)] hover:shadow-[0_0_35px_rgba(124,191,57,0.5)] cursor-pointer group"
           >
             <span className="transition-colors uppercase tracking-wider font-primary text-lg md:text-xl leading-none">
-              Matricule-se agora
+              {isWaitingList ? "Quero me inscrever" : "Matricule-se agora"}
             </span>
           </button>
         </motion.div>
+
 
         {/* Scroll Indicator */}
         <motion.div 

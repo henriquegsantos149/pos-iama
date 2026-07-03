@@ -3,9 +3,10 @@ import { Check, ArrowRight } from 'lucide-react';
 
 interface PricingProps {
   onOpenModal: (url: string) => void;
+  isWaitingList?: boolean;
 }
 
-export default function Pricing({ onOpenModal }: PricingProps) {
+export default function Pricing({ onOpenModal, isWaitingList = false }: PricingProps) {
   const checkoutUrl = "https://pay.voompcreators.com.br/14929";
 
   const benefits = [
@@ -69,7 +70,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
               
               <div>
                 <span className="inline-block px-3 py-1 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-xs uppercase tracking-wider rounded-full mb-6 font-primary">
-                  Acesso Completo
+                  {isWaitingList ? 'Lista de Espera' : 'Acesso Completo'}
                 </span>
                 
                 <h4 className="text-lg font-medium text-[var(--color-brand-light)]/60 font-secondary uppercase tracking-widest mb-2">
@@ -90,7 +91,9 @@ export default function Pricing({ onOpenModal }: PricingProps) {
 
                 <div className="border-t border-white/10 pt-6 mb-8">
                   <p className="text-[var(--color-brand-light)]/80 font-secondary text-sm leading-relaxed">
-                    Aproveite as condições facilitadas para garantir sua vaga na pós-graduação e iniciar imediatamente.
+                    {isWaitingList 
+                      ? 'Entre na lista de espera para garantir sua vaga e ser avisado assim que as matrículas para a nova turma abrirem com condições promocionais.' 
+                      : 'Aproveite as condições facilitadas para garantir sua vaga na pós-graduação e iniciar imediatamente.'}
                   </p>
                 </div>
               </div>
@@ -101,7 +104,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
                   className="shape-leaf w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-base transition-all hover:scale-[1.02] hover:brightness-110 active:scale-95 shadow-[0_0_20px_rgba(124,191,57,0.3)] cursor-pointer group"
                 >
                   <span className="flex items-center gap-2 uppercase tracking-wider font-primary">
-                    Matricule-se agora
+                    {isWaitingList ? 'Entrar na Lista de Espera' : 'Matricule-se agora'}
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </button>
@@ -113,3 +116,4 @@ export default function Pricing({ onOpenModal }: PricingProps) {
     </section>
   );
 }
+

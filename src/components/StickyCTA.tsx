@@ -3,9 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface StickyCTAProps {
   onOpenModal: (url: string) => void;
+  isWaitingList?: boolean;
 }
 
-export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
+export default function StickyCTA({ onOpenModal, isWaitingList = false }: StickyCTAProps) {
   const checkoutUrl = "https://pay.voompcreators.com.br/14929";
   const [isVisible, setIsVisible] = useState(false);
 
@@ -43,7 +44,7 @@ export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
           >
             <div className="relative z-10 flex items-center">
               <span className="font-primary font-extrabold uppercase tracking-wider text-xs sm:text-sm md:text-base leading-tight">
-                Matricule-se agora
+                {isWaitingList ? 'Quero me inscrever' : 'Matricule-se agora'}
               </span>
             </div>
           </motion.button>
@@ -52,3 +53,4 @@ export default function StickyCTA({ onOpenModal }: StickyCTAProps) {
     </AnimatePresence>
   );
 }
+
