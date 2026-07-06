@@ -31,8 +31,9 @@ export default function TargetAudience() {
         <motion.div
            initial={{ opacity: 0, x: -20 }}
            whileInView={{ opacity: 1, x: 0 }}
-           viewport={{ once: true }}
+           viewport={{ once: true, amount: 0.15 }}
            transition={{ duration: 0.6 }}
+           className=""
         >
           <div className="flex items-center gap-3 text-[var(--color-brand-secondary)] mb-6 font-primary uppercase tracking-widest font-bold text-sm">
             <Users className="w-5 h-5" />
@@ -57,7 +58,7 @@ export default function TargetAudience() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-brand-gradient p-1 shape-leaf"
         >

@@ -54,9 +54,9 @@ export default function SkillsResults() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-8 shape-leaf bg-white border border-black/10 hover:border-[var(--color-brand-primary)]/40 transition-all shadow-md"
+              className="group p-8 shape-leaf bg-white border border-black/10 hover:border-[var(--color-brand-primary)]/40 transition-colors shadow-md"
             >
               <div className="w-12 h-12 shape-leaf bg-black/5 flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-primary)]/10 transition-all duration-300">
                 <skill.icon className="w-6 h-6 text-[var(--color-brand-dark)] group-hover:text-[var(--color-brand-secondary)] transition-colors duration-300" />

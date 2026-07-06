@@ -24,7 +24,7 @@ export default function CallToAction({ onOpenModal, isWaitingList = false, bgVar
         <motion.div
            initial={{ opacity: 0, scale: 0.95 }}
            whileInView={{ opacity: 1, scale: 1 }}
-           viewport={{ once: true }}
+           viewport={{ once: true, amount: 0.15 }}
            transition={{ duration: 0.6 }}
            className={`shape-leaf p-12 md:p-20 shadow-2xl relative overflow-hidden backdrop-blur-sm ${boxClass}`}
          >

@@ -54,9 +54,9 @@ export default function PracticalApplications() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex flex-col bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-[var(--color-brand-primary)] hover:bg-white/10 transition-all duration-300 shadow-lg"
+              className="group flex flex-col bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-[var(--color-brand-primary)] hover:bg-white/10 transition-colors duration-300 shadow-lg"
             >
               <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-black/20">
                 <img 

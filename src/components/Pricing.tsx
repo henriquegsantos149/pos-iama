@@ -38,7 +38,7 @@ export default function Pricing({ onOpenModal, isWaitingList = false }: PricingP
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 flex flex-col justify-center"
           >
@@ -61,7 +61,7 @@ export default function Pricing({ onOpenModal, isWaitingList = false }: PricingP
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-5 flex flex-col"
           >

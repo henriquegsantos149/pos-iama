@@ -11,7 +11,7 @@ export default function ProblemObjective() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 space-y-8"
           >
@@ -57,7 +57,7 @@ export default function ProblemObjective() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-5 shape-leaf bg-brand-gradient p-1 shadow-2xl sticky top-28"
           >

@@ -29,7 +29,7 @@ export default function CourseInfo() {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-100px", amount: 0.15 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
         >
           {/* Card: Título */}
@@ -79,7 +79,7 @@ export default function CourseInfo() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="lg:col-span-3 col-span-1 shape-leaf bg-white border border-black/10 p-8 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden shadow-lg shadow-black/10"
           >
@@ -104,9 +104,9 @@ export default function CourseInfo() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="lg:col-span-1 col-span-1 shape-leaf bg-white border border-black/10 p-8 flex flex-col justify-center items-center gap-4 relative overflow-hidden shadow-lg shadow-black/10 text-center hover:border-[var(--color-brand-secondary)]/50 transition-all group"
+            className="lg:col-span-1 col-span-1 shape-leaf bg-white border border-black/10 p-8 flex flex-col justify-center items-center gap-4 relative overflow-hidden shadow-lg shadow-black/10 text-center hover:border-[var(--color-brand-secondary)]/50 transition-colors group"
           >
             {/* subtle glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-brand-gradient opacity-[0.08] blur-[50px] pointer-events-none"></div>
