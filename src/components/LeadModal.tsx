@@ -88,6 +88,28 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
       }
 
       if (isWaitingList) {
+        try {
+          const urlParams = new URLSearchParams(window.location.search);
+          const payload = {
+            ...formData,
+            utm_source: urlParams.get('LISTA_DE_ESPERA_POS_IAMA_UTM_SOURCE') || urlParams.get('utm_source') || '',
+            utm_medium: urlParams.get('LISTA_DE_ESPERA_POS_IAMA_UTM_MEDIUM') || urlParams.get('utm_medium') || '',
+            utm_campaign: urlParams.get('LISTA_DE_ESPERA_POS_IAMA_UTM_CAMPAIGN') || urlParams.get('utm_campaign') || '',
+            utm_content: urlParams.get('PACOTAO_QGIS_UTM_CONTENT') || urlParams.get('utm_content') || '',
+            utm_term: urlParams.get('LISTA_DE_ESPERA_POS_IAMA_UTM_TERM') || urlParams.get('utm_term') || ''
+          };
+
+          await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+          });
+        } catch (e) {
+          console.error('Erro ao salvar no ActiveCampaign:', e);
+        }
+
         setIsSubmitting(false);
         setIsSubmitted(true);
       } else {
