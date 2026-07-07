@@ -99,7 +99,7 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
             utm_term: urlParams.get('LISTA_DE_ESPERA_POS_IAMA_UTM_TERM') || urlParams.get('utm_term') || ''
           };
 
-          await fetch('/api/subscribe', {
+          await fetch('/pos-iama/api/subscribe', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
