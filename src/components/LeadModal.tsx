@@ -68,9 +68,8 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
     setIsSubmitting(true);
 
     const SHEET_URL_MATRICULA = 'https://script.google.com/macros/s/AKfycbzoQQtPl_TazLAIbacOSLYyq_fCulFa10Dv_Wd1DOR96Xsurd9_HeSKgsv9axxm9l4PTg/exec';
-    const SHEET_URL_LISTA_ESPERA = 'https://script.google.com/macros/s/AKfycbzoQQtPl_TazLAIbacOSLYyq_fCulFa10Dv_Wd1DOR96Xsurd9_HeSKgsv9axxm9l4PTg/exec';
 
-    const targetUrl = isWaitingList ? SHEET_URL_LISTA_ESPERA : SHEET_URL_MATRICULA;
+    const targetUrl = isWaitingList ? null : SHEET_URL_MATRICULA;
 
     try {
       if (targetUrl) {
@@ -83,7 +82,7 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
           },
           body: JSON.stringify({
             ...formData,
-            course: isWaitingList ? 'lista-de-espera-pós-iama' : 'pós-iama'
+            course: 'pós-iama'
           }),
         });
       }
