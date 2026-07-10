@@ -25,9 +25,9 @@ const facultyMembers = [
 
   {
     name: "Vinícius Ragghianti",
-    title: "ENGENHEIRO AMBIENTAL E SANITARISTA, MBA EM GESTÃO DE PROJETOS",
+    title: "ENGENHEIRO AMBIENTAL E SANITARISTA, ADVOGADO, MBA EM GESTÃO DE PROJETOS",
     image: `${base}faculty/vinicius.webp`,
-    resume: "Especialista em saneamento, infraestrutura e IA generativa aplicada à engenharia. Co-fundador da ECHOA Engenharia e ex-presidente da ACESA."
+    resume: "Especialista em saneamento, infraestrutura e IA generativa aplicada à engenharia. Fundador do Método RGT, Inteligência Artificial aplicada à Engenharia, e ex-presidente da ACESA."
   },
   {
     name: "Ariel Dias",
