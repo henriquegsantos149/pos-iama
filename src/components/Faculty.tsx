@@ -46,12 +46,6 @@ const facultyMembers = [
     title: "COORDENADOR DE TI E MESTRE EM ADMINISTRAÇÃO",
     image: `${base}faculty/danilo.webp`,
     resume: "Especialista em ciência de dados, automação, IA generativa e gestão de processos, com experiência em tecnologia educacional."
-  },
-  {
-    name: "Guilherme Modena",
-    title: "ENGENHEIRO ELETRICISTA E CEO DA CLIMAREAD",
-    image: `${base}faculty/guilherme.webp`,
-    resume: "Especialista em monitoramento ambiental, automação, sistemas embarcados e soluções IoT, com ampla experiência no desenvolvimento de tecnologias para aquisição e análise de dados ambientais."
   }
 ];
 
