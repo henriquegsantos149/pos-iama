@@ -35,7 +35,7 @@ export default function CallToAction({ onOpenModal, isWaitingList = false, bgVar
           
           <p className={`text-xl mb-12 max-w-3xl mx-auto relative z-10 font-secondary mt-6 ${textMutedClass}`}>
             {isWaitingList 
-              ? 'Entre na lista de espera e garanta prioridade na abertura de novas vagas para a Pós IA.MA.' 
+              ? 'Entre na lista de espera para garantir prioridade na abertura de novas vagas da Pós IA.MA e receber um desconto exclusivo.' 
               : 'Junte-se à próxima turma e torne-se um especialista em Inteligência Artificial Aplicada ao Meio Ambiente.'}
           </p>
           

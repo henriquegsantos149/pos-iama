@@ -186,11 +186,17 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
                 <h2 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight font-primary mb-2">
                   {isWaitingList ? 'Lista de Espera' : 'Falta Pouco!'}
                 </h2>
-                <p className="text-[var(--color-brand-light)]/60 font-secondary text-sm md:text-base">
-                  {isWaitingList 
-                    ? 'Preencha os dados abaixo para garantir sua vaga na lista de espera da próxima turma da Pós IA.MA.' 
-                    : 'Preencha os dados abaixo para continuar sua inscrição na Pós IA.MA.'}
-                </p>
+                {isWaitingList ? (
+                  <div className="bg-[var(--color-brand-primary)]/10 border border-[var(--color-brand-primary)]/30 rounded-lg p-4 mt-2 mb-4 shadow-inner">
+                    <p className="text-white font-primary font-bold text-sm md:text-base leading-relaxed text-left">
+                      Preencha os dados abaixo para entrar na lista de espera da Pós IA.MA e garantir um <span className="text-[var(--color-brand-primary)]">desconto exclusivo</span>.
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-[var(--color-brand-light)]/60 font-secondary text-sm md:text-base mt-2">
+                    Preencha os dados abaixo para continuar sua inscrição na Pós IA.MA.
+                  </p>
+                )}
               </div>
 
               {/* Form */}
