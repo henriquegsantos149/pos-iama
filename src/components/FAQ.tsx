@@ -46,11 +46,6 @@ export default function FAQ({ bgVariant = 'light' }: FAQProps) {
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 shape-leaf bg-brand-gradient flex items-center justify-center text-[var(--color-brand-dark)]">
-              <HelpCircle className="w-6 h-6" />
-            </div>
-          </div>
           <h2 className={`text-3xl font-bold mb-4 font-primary uppercase tracking-wide ${textClass}`}>
             Perguntas <span className="text-brand-gradient">Frequentes</span>
           </h2>
