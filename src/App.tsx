@@ -55,7 +55,7 @@ function App() {
       <TargetAudience />
       <Faculty />
       <CourseInfo />
-      {!isWaitingList && <Pricing onOpenModal={handleOpenModal} isWaitingList={isWaitingList} />}
+      <Pricing onOpenModal={handleOpenModal} isWaitingList={isWaitingList} />
       {/* <Testimonials /> */}
       <FAQ bgVariant={isWaitingList ? 'dark' : 'light'} />
       <CallToAction onOpenModal={handleOpenModal} isWaitingList={isWaitingList} bgVariant={isWaitingList ? 'light' : 'dark'} />
