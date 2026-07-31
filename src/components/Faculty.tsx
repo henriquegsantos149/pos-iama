@@ -22,6 +22,12 @@ const facultyMembers = [
     image: `${base}faculty/victor.webp`,
     resume: "Especialista em licenciamento ambiental e IA generativa aplicada ao setor ambiental. Fundador da VIVA Assessoria Ambiental e criador do Método Estudo Ambiental Eficiente com IA."
   },
+  {
+    name: "Gabriela Luchetti",
+    title: "ENGENHEIRA AMBIENTAL, MESTRE E DOUTORANDA",
+    image: `${base}faculty/gabriela.webp`,
+    resume: "Atua com modelagem matemática ambiental, geotecnologias e inteligência artificial aplicadas à conservação. Especialista em aproximar a ciência da prática e tomada de decisões."
+  },
 
   {
     name: "Vinícius Ragghianti",
