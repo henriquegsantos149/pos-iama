@@ -106,6 +106,14 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
             },
             body: JSON.stringify(payload),
           });
+
+          // Disparar o evento de Lead do Meta Pixel e GTM
+          if (typeof (window as any).fbq === 'function') {
+            (window as any).fbq('track', 'Lead');
+          }
+          if (typeof (window as any).dataLayer !== 'undefined') {
+            (window as any).dataLayer.push({ event: 'Lead' });
+          }
         } catch (e) {
           console.error('Erro ao salvar no ActiveCampaign:', e);
         }
