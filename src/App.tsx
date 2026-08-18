@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProblemObjective from './components/ProblemObjective'
@@ -15,11 +15,13 @@ import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
 import StickyCTA from './components/StickyCTA'
 import LeadModal from './components/LeadModal'
+import { trackMeta } from './lib/meta'
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeUrl, setActiveUrl] = useState('https://pay.voompcreators.com.br/14929');
   const [isWaitingList, setIsWaitingList] = useState(false);
+  const viewContentSent = useRef(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -42,14 +44,26 @@ function App() {
         (window as any).fbq('track', 'PageView');
 
         // Google Tag Manager
-        (function(w: any,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        // @ts-ignore
+        (function(w: any,d: any,s: any,l: any,i: any){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j: any=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;if(f&&f.parentNode){f.parentNode.insertBefore(j,f);}
         })(window,document,'script','dataLayer','GTM-MTZ9NFFN');
       }
     }
   }, []);
+
+  useEffect(() => {
+    if (viewContentSent.current) return;
+    viewContentSent.current = true;
+    trackMeta('ViewContent', {
+      customData: {
+        content_name: 'Pós IA.MA',
+        content_category: isWaitingList ? 'lista-de-espera' : 'pagina-de-vendas',
+      },
+    });
+  }, [isWaitingList]);
 
   const handleOpenModal = (url: string) => {
     if (url.includes('tinyurl.com') || url.includes('wa.link') || url.includes('whatsapp') || url.includes('api.whatsapp.com')) {

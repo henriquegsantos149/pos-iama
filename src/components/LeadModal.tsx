@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Loader2, Check } from 'lucide-react';
+import { trackMeta } from '../lib/meta';
 
 interface LeadModalProps {
   isOpen: boolean;
@@ -88,6 +89,28 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
       }
 
       if (isWaitingList) {
+        const metaOptions = {
+          customData: {
+            content_name: 'Pós IA.MA',
+            content_category: 'lista-de-espera',
+          },
+          userData: {
+            nome: formData.nome,
+            email: formData.email,
+            telefone: formData.telefone,
+          },
+        };
+
+        // Lead para todo submit da lista de espera (Pixel + CAPI deduplicados)
+        trackMeta('Lead', metaOptions);
+
+        if (formData.formacao.toLowerCase() === 'sim') {
+          if (typeof window !== 'undefined' && (window as any).dataLayer) {
+            (window as any).dataLayer.push({ event: 'lead_qualificado' });
+          }
+          trackMeta('lead_qualificado', metaOptions);
+        }
+
         try {
           const urlParams = new URLSearchParams(window.location.search);
           const payload = {
@@ -106,14 +129,6 @@ export default function LeadModal({ isOpen, onClose, checkoutUrl, isWaitingList 
             },
             body: JSON.stringify(payload),
           });
-
-          // Disparar o evento de Lead do Meta Pixel e GTM
-          if (typeof (window as any).fbq === 'function') {
-            (window as any).fbq('track', 'Lead');
-          }
-          if (typeof (window as any).dataLayer !== 'undefined') {
-            (window as any).dataLayer.push({ event: 'Lead' });
-          }
         } catch (e) {
           console.error('Erro ao salvar no ActiveCampaign:', e);
         }
