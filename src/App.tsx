@@ -15,18 +15,29 @@ import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
 import StickyCTA from './components/StickyCTA'
 import LeadModal from './components/LeadModal'
+import About from './components/About'
+import Contact from './components/Contact'
+import Privacy from './components/Privacy'
 import { trackMeta } from './lib/meta'
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeUrl, setActiveUrl] = useState('https://pay.voompcreators.com.br/14929');
   const [isWaitingList, setIsWaitingList] = useState(false);
+  const [isAbout, setIsAbout] = useState(false);
+  const [isContact, setIsContact] = useState(false);
+  const [isPrivacy, setIsPrivacy] = useState(false);
   const viewContentSent = useRef(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const isWaiting = window.location.pathname.includes('/lista-de-espera');
+      const path = window.location.pathname;
+      const isWaiting = path.includes('/lista-de-espera');
       setIsWaitingList(isWaiting);
+      setIsAbout(path.includes('/about'));
+      setIsContact(path.includes('/contact'));
+      setIsPrivacy(path.includes('/privacy'));
+
       if (isWaiting) {
         document.title = "Lista de Espera | Pós-Graduação em Inteligência Artificial Aplicada ao Meio Ambiente";
         
@@ -77,6 +88,10 @@ function App() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  if (isAbout) return <About />;
+  if (isContact) return <Contact />;
+  if (isPrivacy) return <Privacy />;
 
   return (
     <main className="w-full min-h-screen bg-[var(--color-brand-dark)] text-[var(--color-brand-light)] font-secondary selection:bg-[var(--color-brand-primary)] selection:text-[var(--color-brand-dark)]">
