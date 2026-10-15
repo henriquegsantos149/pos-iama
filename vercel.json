@@ -29,8 +29,27 @@
     }
   ],
   "routes": [
-    { "src": "/pos-iama/api/(.*)", "dest": "/api/$1" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/pos-iama/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(pos-iama/)?vinicius(?:/vinicius)?\\.html",
+      "status": 308,
+      "headers": {
+        "Location": "/vinicius"
+      }
+    },
+    {
+      "src": "/(pos-iama/)?vinicius/?",
+      "dest": "/vinicius/vinicius.html"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }

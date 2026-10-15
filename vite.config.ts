@@ -11,6 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        vinicius: resolve(__dirname, 'vinicius/vinicius.html'),
         'lista-de-espera': resolve(__dirname, 'lista-de-espera/index.html'),
       },
     },

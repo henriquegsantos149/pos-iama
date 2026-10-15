@@ -12,6 +12,7 @@ export default function middleware(request: Request) {
   // Define valid application routes
   const validRoutes = [
     '/', '/pos-iama', '/pos-iama/',
+    '/vinicius', '/vinicius/', '/pos-iama/vinicius', '/pos-iama/vinicius/',
     '/lista-de-espera', '/lista-de-espera/', '/pos-iama/lista-de-espera', '/pos-iama/lista-de-espera/',
     '/about', '/about/', '/pos-iama/about', '/pos-iama/about/',
     '/contact', '/contact/', '/pos-iama/contact', '/pos-iama/contact/',

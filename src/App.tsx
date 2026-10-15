@@ -20,7 +20,7 @@ import Contact from './components/Contact'
 import Privacy from './components/Privacy'
 import { trackMeta } from './lib/meta'
 
-function App() {
+function App({ checkoutUrl }: { checkoutUrl?: string } = {}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeUrl, setActiveUrl] = useState('https://pay.voompcreators.com.br/14929');
   const [isWaitingList, setIsWaitingList] = useState(false);
@@ -80,7 +80,7 @@ function App() {
     if (url.includes('tinyurl.com') || url.includes('wa.link') || url.includes('whatsapp') || url.includes('api.whatsapp.com')) {
       window.open(url, '_blank');
     } else {
-      setActiveUrl(url);
+      setActiveUrl(checkoutUrl ?? url);
       setIsModalOpen(true);
     }
   };
