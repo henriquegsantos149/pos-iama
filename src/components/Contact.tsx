@@ -31,14 +31,15 @@ export default function Contact() {
               </li>
               <li>
                 <strong className="text-[var(--color-brand-primary)] block">WhatsApp:</strong>
-                <a href="https://wa.me/5511999999999" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">+55 (11) 99999-9999</a>
+                <a href="https://wa.me/5554996269043" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">+55 (54) 99626-9043</a>
               </li>
               <li>
                 <strong className="text-[var(--color-brand-primary)] block">Endereço Principal:</strong>
                 <address className="not-italic text-white/70">
-                  Rua Exemplo, 123<br />
-                  Bairro Inovação, São Paulo - SP<br />
-                  CEP: 01000-000<br />
+                  Rua Caldas Novas, nº 50, Conjunto 85<br />
+                  Condomínio B Trade, Bethaville I<br />
+                  Barueri - SP<br />
+                  CEP: 06404-301<br />
                   Brasil
                 </address>
               </li>
